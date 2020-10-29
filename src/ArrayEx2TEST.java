@@ -141,10 +141,10 @@ public class ArrayEx2TEST
     	int[] actual = ArrayEx2.filterLess(arr, 5);
     	assertArrayEquals(new int[] {2, 3, 4}, actual);
     	
-    	int[] arr2 = new int[] {7, 2, 5, 8, 4, 3};
+    	int[] arr2 = new int[] {7, 2, 5, 8, 4, 3, 10};
     	int[] actual2 = ArrayEx2.filterLess(arr2, 6);
         
-    	assertArrayEquals(new int[] {7, 8, 4}, actual2);
+    	assertArrayEquals(new int[] {7, 8, 4, 3}, actual2);
     }
     
     @Test
