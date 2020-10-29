@@ -146,15 +146,6 @@ public class ArrayExercises
         
         printPattern(flagPattern);
     }
-    //---------------------------------------------------------------------------
-    //swap the integers in the array at the specified indices after doubling them
-    // given array [1, 2, 3, 4, 5] and index1=0; index2=3, resulting array is [4*2=8, 2, 3, 1*2=2, 5], so [8, 2, 3, 2, 5]
-    public static void swapAndDouble (int[] array, int index1, int index2){
-        
-        //put your code here!
-        
-        printRow(array);
-    }
 
 
     /* draw and xoxo gossip girl flag within a 2D array [a][2a], 

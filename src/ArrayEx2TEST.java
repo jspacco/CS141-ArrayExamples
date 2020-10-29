@@ -117,9 +117,9 @@ public class ArrayEx2TEST
     @Test
     public void testAllPos2() {
         // TAs: LOOK AT THE CODE TO MAKE SURE THEY ARE CALLING allAtLeastN()
-        assertTrue(ArrayEx2.allPos(new int[] {2, 3, 4, 5, 6, 7, 8, 9}));
-        assertFalse(ArrayEx2.allPos(new int[] {2, 3, 4, 0, 5, 6, 7, 8, 9}));
-        assertFalse(ArrayEx2.allPos(new int[] {2, 3, 4, 5, 6, -7, 8, 9}));
+        assertTrue(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 5, 6, 7, 8, 9}, 0));
+        assertFalse(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 0, 5, 6, 7, 8, 9}, 0));
+        assertFalse(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 5, 6, -7, 8, 9}, 0));
     }
     
     @Test
@@ -135,8 +135,16 @@ public class ArrayEx2TEST
         assertArrayEquals(new int[] {3, 0, 1}, ArrayEx2.posNegZero(new int[] {-33, 7, -4, -11}));
     }
     
-    public static int[] filterLess(int[] arr, int max) {
-        return new int[] {0};
+    @Test
+    public void filterLess() {
+    	int[] arr = new int[] {2, 3, 4, 5, 6, 7, 8, 9};
+    	int[] actual = ArrayEx2.filterLess(arr, 5);
+    	assertArrayEquals(new int[] {2, 3, 4}, actual);
+    	
+    	int[] arr2 = new int[] {7, 2, 5, 8, 4, 3};
+    	int[] actual2 = ArrayEx2.filterLess(arr2, 6);
+        
+    	assertArrayEquals(new int[] {7, 8, 4}, actual2);
     }
     
     @Test
