@@ -3,11 +3,14 @@ public class ArrayExercises
 {
     public static void main (String[] args){
         
-        // use this space to test your code with method calls (we might 
+        // use this space to test your code with method calls 
+        // we've provided some calls for you, but you can add your own
+        // your tests will not be graded and TAs may use an entirely different set of tests to grade your code
+        // so do whatever testing you need/want to make sure your functions work correctly
 
         System.out.println("==============================================");
-        searchAndRescue(new String[] {"Jaime", "David", "Rik", "Vera"}, "Vera");//answer is all but Vera
-        searchAndRescue(new String[] {"Jaime", "David", "Rik", "Vera"}, "BillGates");//answer is all but Vera
+        searchAndRescue(new String[] {"Jaime", "David", "Rik", "Vera"}, "Vera");//answer: Jaime David Rik
+        searchAndRescue(new String[] {"Jaime", "David", "Rik", "Vera"}, "BillGates");//answer: Jaime David Rik Vera
         System.out.println("==============================================");
         System.out.println(nthLargest(new double[] {0,1,2,3,4,5,6,7,8,9,10},5));//answer=6
         System.out.println("----------------------------------------------");
@@ -28,9 +31,9 @@ public class ArrayExercises
         //                                                              JGC 
         //                                                              KHD
         System.out.println("==============================================");
-        drawFlagX(new char [20][80]);
+        drawFlagX(new char [20][80]); //sample solution is in a comment above the function
         System.out.println("==============================================");
-        drawFlagXOXO(new char [20][40]);
+        drawFlagXOXO(new char [20][40]); //sample solution is in a comment above the function
         System.out.println("==============================================");
 
     }
@@ -139,7 +142,8 @@ public class ArrayExercises
     X X X
     X
     
-    then fill over some of these X values with a smaller traingle full of ' ' blank chars    */
+    then fill over some of these X values with a smaller traingle full of ' ' blank chars    
+    */    
     public static void drawFlagX(char[][] flagPattern){
 
         //put your code here!
@@ -185,10 +189,12 @@ public class ArrayExercises
     // THERE IS NOTHING FOR YOU TO DO BELOW (THERE ARE CALLS TO THESE METHODS ABOVE TO CREATE SOME OUTPUTS)
   
     //----------------------- PRINTING TESTER METHODS -------------------
-    // use these to test your code!! Choose which works for your needs
+    // you can use these to test your code; choose which works for your needs; 
+    // the above functions already call these; you can always call them yourself throughout as well to debug your code
+    // choose which works for your needs: are you printing chars? ints? doubles? one dimensional array or two?
     //      method call: <nameoffunction>(variableName) <-- this variable datatype has to match the parameter type for the function
     // some of the functions below are overloaded: multiple functions with same name but different parameter types; this is legit and 
-    //      Java will figure out which you meant to use by type of thing you pass in to the call
+    //      Java will figure out which you meant to use by the type of thing you pass into the call
 
     //print a 2D char array
     public static void printPattern(char[][] pattern){
