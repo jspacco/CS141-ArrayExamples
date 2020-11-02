@@ -127,9 +127,9 @@ public class ArrayEx2TEST
     @Test
     public void testAllPos2() {
         // TAs: LOOK AT THE CODE TO MAKE SURE THEY ARE CALLING allAtLeastN()
-        assertTrue(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 5, 6, 7, 8, 9}, 1));
-        assertFalse(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 0, 5, 6, 7, 8, 9}, 1));
-        assertFalse(ArrayEx2.allAtLeastN(new int[] {2, 3, 4, 5, 6, -7, 8, 9}, 1));
+        assertTrue(ArrayEx2.allPos2(new int[] {2, 3, 4, 5, 6, 7, 8, 9}));
+        assertFalse(ArrayEx2.allPos2(new int[] {2, 3, 4, 0, 5, 6, 7, 8, 9}));
+        assertFalse(ArrayEx2.allPos2(new int[] {2, 3, 4, 5, 6, -7, 8, 9}));
     }
     
     @Test
