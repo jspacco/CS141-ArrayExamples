@@ -94,6 +94,16 @@ public class ArrayEx2TEST
     }
     
     @Test
+    public void testCountAbove() {
+    	int[] arr = {3, 9, 7, 4, 5, 1, 4};
+    	assertEquals(3, ArrayEx2.countAbove(arr, 4));
+    	
+    	assertEquals(0, ArrayEx2.countAbove(arr, 10));
+    	
+    	assertEquals(7, ArrayEx2.countAbove(arr, 0));
+    }
+    
+    @Test
     public void testCountDivisible() {
         assertEquals(3, ArrayEx2.countDivisible(new int[] {2, 3, 4, 5, 6, 7, 8, 9}, 3));
         assertEquals(4, ArrayEx2.countDivisible(new int[] {2, 3, 4, 5, 6, 7, 8, 9}, 2));

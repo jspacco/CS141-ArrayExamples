@@ -143,7 +143,7 @@ public class ArrayEx2
     	return -1;
     }
     
-    // return the largest sum of the values in each row of the given grid
+    // return the index of the row containing the largest sum of the values of the row of the given grid
     // the grid may not be square
     // For full credit: Use the sum() function you wrote above
     public static int maxRowIndex(int[][] grid) {
