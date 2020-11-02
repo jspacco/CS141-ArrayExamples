@@ -75,8 +75,8 @@ public class ArrayEx2
     	return false;
     }
     
-    // return true if all the values are at least n, and false otherwise
-    // do this by calling the allAtLeastN function above
+    // return true if all the values are positive, and false otherwise
+    // do this by calling the allAtLeastN function above (figure out a value for the n parameter)
     public static boolean allPos2(int[] arr) {
     	// replace with your code
     	return false;
@@ -123,35 +123,35 @@ public class ArrayEx2
     }
     
     // return the length of the longest String in arr
-    // some of the string values may be null. Treat those as of length zero
+    // some of the String values may be null; treat those as of length zero
+    // note that if you try to call the length() on a null String, you will get a null pointer exception, so check that String is not null first
     public static int maxLen2(String[] arr) {
     	// replace with your code
     	return -1;
     }
     
-    // return the sum of all of the values in the the given array
+    // return the sum of all of the values in the the given 1D array
     public static int sum(int[] arr) {
     	// replace with your code
     	return -1;
     }
     
-    // return the largest sum of the values in each row of the given grid
-    // the grid may not be square
-    // For full credit: Use the sum() function you wrote above
+    // return the largest sum of the values within a single row, from among all the rows in the given grid
+    // the grid may not be regularly shaped (i.e. it might not have the same number of columns in each row)
+    // e.g. {{1,2,3},{3,1}} has two rows; row 0 {1,2,3} sums up to 6 and row 1 {3,1} sums up to 4, so we would return 6
+    // For full credit: Use the sum() function you wrote above (note that each row in a 2D array is a 1D array)
     public static int maxRow(int[][] grid) {
     	// replace with your code
     	return -1;
     }
     
-    // return the index of the row containing the largest sum of the values of the row of the given grid
-    // the grid may not be square
-    // For full credit: Use the sum() function you wrote above
+    // return the index of the row containing the largest sum of the values among all rows in the given grid
+    // the grid may not be regularly shaped (i.e. it might not have the same number of columns in each row)
+    // e.g. {{1,2,3},{3,1}} has two rows; row 0 {1,2,3} sums up to 6 and row 1 {3,1} sums up to 4, so we would return 0
+    // For full credit: Use the sum() function you wrote above (note that each row in a 2D array is a 1D array)
     public static int maxRowIndex(int[][] grid) {
     	// replace with your code
     	return -1;
     }
-    
-    
-    
-    
+
 }
