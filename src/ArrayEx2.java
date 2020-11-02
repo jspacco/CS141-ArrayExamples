@@ -75,8 +75,9 @@ public class ArrayEx2
     	return false;
     }
     
-    // return true if all the values are at least n, and false otherwise
-    // do this by calling the allAtLeastN function above
+    // return true if all the values are positive, and false otherwise
+    // do this by calling the allAtLeastN function above, 
+    // with an appropriate value for n
     public static boolean allPos2(int[] arr) {
     	// replace with your code
     	return false;
